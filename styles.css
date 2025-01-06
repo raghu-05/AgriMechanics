@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Adding a background image to the homepage */
+body {
+    background-image:url('https://i.ytimg.com/vi/gyUXKBUCMx8/maxresdefault.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Makes the background image fixed while scrolling */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    font-family: Arial, sans-serif;
+    color: #282525; /* Text color on top of background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Add an overlay to make text more readable */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+header {
+    background: #28a745;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar h1 {
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('farm-hero.jpg') no-repeat center center/cover;
+    height: 400px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.tech-list, .resource-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.tech-item, .resource-item {
+    width: 30%;
+    padding: 20px;
+    backdrop-filter:blur(15px);
+    box-shadow: 0 0 10px bisque;
+    border: None;
+    border-radius: 8px;
+}
+
+#community {
+    background: #f0f8ff;
+    padding: 40px;
+}
+
+#community h2 {
+    color: black;
+}
+
+#community button {
+    background: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact-form input, #contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#contact-form button {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    background: #28a745;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+/* Add any new styles as needed for the new sections */
+.info-section, .usage-section, .cost-section, .benefits-section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background: #218838;
+}
+/* Technologies Section Styling */
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.tech-item {
+    width: 300px;
+    text-align: center;
+}
+
+.tech-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* Ensures the image fits the container properly */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.tech-img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.tech-item h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.tech-item p {
+    font-size: 0.9em;
+    color: #666;
+}
+h2{
+    color: white;
+}
